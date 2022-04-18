@@ -13,13 +13,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] arr= generateRandomArray();
+        int[] arr = generateRandomArray();
         System.out.println("Наш массив");
         System.out.println(Arrays.toString(arr));
 
         float allSum = 0;
         for (int i : arr) {
-            allSum +=i;
+            allSum += i;
         }
         System.out.println("Сумма трат за месяц составила " + allSum + " руюлей");
 
@@ -36,5 +36,13 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма затрат за день" + minSum + "рублей \n" + "Максимальная сумма затрат за день" + maxSum + " рублей");
+
+        // ЗАДАЧА 3
+        float averegeSum;
+        averegeSum = allSum / 30;
+        System.out.println("Средняя сумма " + averegeSum + " рублей");
+
+        // Задача 4
+
     }
 }
