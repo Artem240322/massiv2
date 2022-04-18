@@ -22,5 +22,19 @@ public class Main {
             allSum +=i;
         }
         System.out.println("Сумма трат за месяц составила " + allSum + " руюлей");
+
+
+        // Задача 2
+        int minSum = arr[0];
+        int maxSum = arr[0];
+        for (int i : arr) {
+            if (i > maxSum) {
+                maxSum = i;
+            }
+            if (minSum > i) {
+                minSum = i;
+            }
+        }
+        System.out.println("Минимальная сумма затрат за день" + minSum + "рублей \n" + "Максимальная сумма затрат за день" + maxSum + " рублей");
     }
 }
